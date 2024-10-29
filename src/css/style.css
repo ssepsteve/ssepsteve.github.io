@@ -1,0 +1,124 @@
+:root {
+    --color-dark-blue: #22223B;
+    --color-blue: #4A4E69;
+    --color-mauve: #9A8C98;
+    --color-pinkish: #C9ADA7;
+    --color-light: #F2E9E4;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--color-dark-blue);
+  background-color: var(--color-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  background-color: var(--color-dark-blue);
+  color: var(--color-light);
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+h1 {
+  color: var(--color-light);
+}
+h2, h3 {
+  color: var(--color-dark-blue);
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: var(--color-light);
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+.section-title {
+  color: var(--color-blue);
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.ikigai-description {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: var(--color-mauve);
+  border-radius: 8px;
+  color: var(--color-light);
+}
+
+.question {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.option {
+  background-color: var(--color-pinkish);  
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  color: var(--color-dark-blue);
+  transition: background-color 0.3s;
+}
+
+.option:hover, .option.selected {
+  background-color: var(--color-blue);
+  color: var(--color-light);
+}
+
+.option1 {}
+
+.option1:hover, .option.selected {}
+
+.option2 {}
+
+.option2:hover, .option.selected {}
+
+.option3 {}
+
+.option3:hover, .option.selected {}
+
+.option4 {}
+
+.option4:hover, .option.selected {}
+
+.option5 {}
+
+.option5:hover, .option.selected {}
+
+.submit-button {
+  background-color: var(--color-dark-blue);
+  color: var(--color-light);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: var(--color-mauve);
+  color: var(--color-light);
+  border-radius: 8px;
+}
+
+  /* Responsividad */
+@media (max-width: 600px) {
+    .container {
+    width: 100%;
+  }
+}

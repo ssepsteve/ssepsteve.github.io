@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Vocacional de Ingeniería</title>
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Test Vocacional - Facultad de Ingeniería</h1>
+    <p>Descubre qué carrera de ingeniería es ideal para ti según el concepto del Ikigai.</p>
+  </header>
+
+  <div class="container">
+    <h2 class="section-title">¿Qué es el Ikigai?</h2>
+    <div class="ikigai-description">
+      <p>Ikigai es un concepto japonés que significa "razón de ser". 
+        Es la intersección de lo que amas, en lo que eres bueno, 
+        lo que el mundo necesita y por lo que te pueden pagar. 
+        Este test utiliza el Ikigai para ayudarte a descubrir la carrera 
+        de ingeniería que mejor se adapta a tus intereses y habilidades.</p>
+    </div>
+
+    <h2 class="section-title">Responde las siguientes preguntas:</h2>
+
+    <!-- Pregunta 1 -->
+    <div class="question" data-question="1">1. ¿Qué te motiva a la hora de trabajar en un proyecto?</div>
+    <div class="option option1" onclick="selectOption(this, 1, 'Industrial')">Innovación y mejora de procesos</div>
+    <div class="option option1" onclick="selectOption(this, 1, 'Agrícola')">Impacto ambiental y sostenibilidad</div>
+    <div class="option option1" onclick="selectOption(this, 1, 'Civil')">Diseño y construcción de estructuras</div>
+    <div class="option option1" onclick="selectOption(this, 1, 'Mecatrónica')">Automatización y tecnología</div>
+
+    <!-- Pregunta 2 -->
+    <div class="question" data-question="2">2. ¿Cuál de estas áreas te interesa más?</div>
+    <div class="option option2" onclick="selectOption(this, 2, 'Sistemas')">Sistemas de información y programación</div>
+    <div class="option option2" onclick="selectOption(this, 2, 'Eléctrica')">Energías renovables y redes eléctricas</div>
+    <div class="option option2" onclick="selectOption(this, 2, 'Industrial')">Optimización y eficiencia de procesos industriales</div>
+    <div class="option option2" onclick="selectOption(this, 2, 'Mecánica')">Mantenimiento de maquinaria y robótica</div>
+
+    <!-- Pregunta 3 -->
+    <div class="question" data-question="3">3. ¿Qué tipo de entorno de trabajo prefieres?</div>
+    <div class="option option3" onclick="selectOption(this, 3, 'Industrial')">Oficinas y reuniones estratégicas</div>
+    <div class="option option3" onclick="selectOption(this, 3, 'Agrícola')">Trabajar en campo y con la naturaleza</div>
+    <div class="option option3" onclick="selectOption(this, 3, 'Electrónica')">Laboratorio de desarrollo tecnológico</div>
+    <div class="option option3" onclick="selectOption(this, 3, 'Civil')">Industria y fábricas</div>
+
+    <!-- Pregunta 4 -->
+    <div class="question" data-question="4">4. ¿Cuál es tu habilidad más destacada?</div>
+    <div class="option option4" onclick="selectOption(this, 4, 'Industrial')">Liderazgo y toma de decisiones</div>
+    <div class="option option4" onclick="selectOption(this, 4, 'Sistemas')">Resolución de problemas complejos</div>
+    <div class="option option4" onclick="selectOption(this, 4, 'Mecánica')">Análisis de datos y programación</div>
+    <div class="option option4" onclick="selectOption(this, 4, 'Electrónica')">Diseño de sistemas mecánicos</div>
+
+    <!-- Pregunta 5 -->
+    <div class="question" data-question="5">5. ¿Qué valoras más en tu trabajo?</div>
+    <div class="option option5" onclick="selectOption(this, 5, 'Civil')">Contribuir al bienestar social</div>
+    <div class="option option5" onclick="selectOption(this, 5, 'Electrónica')">Innovación y avance tecnológico</div>
+    <div class="option option5" onclick="selectOption(this, 5, 'Industrial')">Eficiencia y optimización</div>
+    <div class="option option5" onclick="selectOption(this, 5, 'Agrícola')">Sostenibilidad y conservación</div>
+
+    <button class="submit-button" onclick="showResult()">Ver mi Carrera Recomendada</button>
+
+    <div id="result">
+      <h2 id="result-title"></h2>
+      <p id="result-description"></p>
+    </div>
+  </div>
+
+  <script src="src/js/main.js"></script>
+</body>
+</html>
