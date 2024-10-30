@@ -40,7 +40,7 @@ const scores = {
       'Electrónica': 'La Ingeniería Electrónica se centra en el diseño y aplicación de dispositivos electrónicos, como sistemas de comunicación y control.',
       'Mecánica': 'La Ingeniería Mecánica diseña y mejora maquinaria y sistemas mecánicos, con aplicaciones en múltiples industrias.',
       'Mecatrónica': 'La Ingeniería Mecatrónica integra mecánica, electrónica y computación para crear sistemas automatizados y robóticos.',
-      'Quimica': 'La Ingeniería Química desarrolla procesos sostenibles y nuevos materiales para industrias como la farmacéutica y alimentaria.'
+      'Química': 'La Ingeniería Química desarrolla procesos sostenibles y nuevos materiales para industrias como la farmacéutica y alimentaria.'
       
     };
 
